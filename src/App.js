@@ -1,3 +1,4 @@
+import { ChevronLeftIcon, ChevronRightIcon, ChevronsLeftIcon } from 'lucide-react'
 import { useRef, useState } from 'react'
 import HTMLFlipBook from 'react-pageflip'
 
@@ -88,6 +89,18 @@ function App() {
     })
     .map(images)
 
+  const goToNextPage = () => {
+    if (bookRef.current) {
+      bookRef.current.pageFlip().flipNext();
+    }
+  };
+
+  const goToPreviousPage = () => {
+    if (bookRef.current) {
+      bookRef.current.pageFlip().flipPrev();
+    }
+  };
+
   return (
     <div
       className="bg-zinc-700 w-screen h-screen flex justify-center items-center overflow-hidden"
@@ -97,9 +110,11 @@ function App() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="flex flex-col justify-center items-center gap-2 mb-4 fixed right-2 bottom-2 z-50">
+      <div className="flex justify-center items-center gap-2 mb-4 fixed bottom-2 z-50">
         <button onClick={handleZoomOut} className="p-2 bg-[#0000008c] font-extrabold text-white w-10 rounded-lg border-[0.1rem]">-</button>
         <button onClick={handleZoomIn} className="p-2 bg-[#0000008c] font-extrabold text-white w-10 rounded-lg border-[0.1rem]">+</button>
+        <button onClick={goToPreviousPage} className="p-2 bg-[#0000008c] font-extrabold text-white w-10 rounded-lg border-[0.1rem]"><ChevronLeftIcon /></button>
+        <button onClick={goToNextPage} className="p-2 bg-[#0000008c] font-extrabold text-white w-10 rounded-lg border-[0.1rem]"><ChevronRightIcon /></button>
       </div>
       <div
         className='w-screen flex items-center justify-center z-1'
@@ -130,4 +145,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
