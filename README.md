@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# 📖 Revista Digital com Efeitos Realistas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um experimento que visa simular uma revista digital com efeitos visuais, proporcionando uma experiência interativa e imersiva para os leitores. Utilizando uma API para renderizar a revista, o projeto permite que as páginas sejam folheadas digitalmente, trazendo um efeito de "folheio" realista.
 
-## Available Scripts
+## 🛠️ Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Para construção da interface de usuário.
+- **API para Efeitos de Revista**: Renderiza e aplica efeitos de página para simular o ambiente de uma revista digital.
 
-### `npm start`
+## 🚀 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Folheio Digital**: Efeito visual que imita o folhear de páginas, proporcionando uma experiência mais imersiva.
+- **Interface Intuitiva**: Navegação simples para que os usuários possam explorar a revista.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Estrutura do Projeto
 
-### `npm test`
+- **/src**: Contém os componentes React que fazem a integração com a API e aplicam os efeitos de página.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏁 Como Iniciar o Projeto
 
-### `npm run build`
+### Pré-requisitos
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/adpneto/magazine-mercosystem.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd magazine-mercosystem
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Executando o Projeto
+```bash
+npm run dev
+```
+Acesse em seu navegador: `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se precisar de mais ajustes ou quiser incluir uma seção extra, avise!
